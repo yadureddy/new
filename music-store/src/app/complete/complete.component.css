@@ -1,0 +1,16 @@
+.cOrder{
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+.cOrder h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    color: #059fe6;
+}
+.cOrder p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+}
+.cOrder p span{
+    font-weight: 700;
+}

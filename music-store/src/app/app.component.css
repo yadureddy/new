@@ -1,0 +1,27 @@
+
+a{
+    text-decoration: none;
+}
+.headerMain{
+    background: #059fe6;
+    margin-bottom: 6px;
+    padding: 0px 0;
+}
+.logo h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 45px;
+    color: #fff;
+}
+.menu{
+    text-align: right;
+    color: #fff;
+    margin-top: 28px;
+}
+.menu a{
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: none;
+}

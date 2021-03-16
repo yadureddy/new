@@ -1,0 +1,41 @@
+<div class="container">
+  <h3 class="hdngTxt">My<span> Shopping Ca</span>rt</h3>
+<div class="row cartTable">
+  <p>Items added in Shopping Cart</p>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr class="thclr">
+        <th>S.No</th>
+        <th>Album Title</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Remove from Cart</th>
+      </tr>
+        <tr *ngFor="let item of cartItems; let i = index">
+          <td>  {{i + 1}} </td>
+          <td>  {{item.title | titlecase}} </td>
+          <td>  {{item.price | currency : "&#8377; "}} </td>
+          <td>  {{item.qty}} </td>
+          <td>  {{item.total | currency : "&#8377; "}} </td>
+          <td> 
+            <a href="javascript:void(0);" (click)="removeItem( item.id )"><img src="assets/images/delete.png"/></a>
+          </td>
+        </tr>
+        
+        <tr>
+          <td  colspan="6" class="gTotal">Grand Total :  {{grandTotal | currency : "&#8377; "}} </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<input type="button"  (click)="checkOut()"  value="Check Out"  />
+<a [routerLink] = "['/store']" class="aBtn">Continue Shopping</a>
+</div>
+
+
+  </div>
+</div>

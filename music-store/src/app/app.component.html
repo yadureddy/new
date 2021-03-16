@@ -1,0 +1,32 @@
+<div class="wrapper">
+
+<div class="container-fluid">
+<div class="row headerMain">
+<div class="container">
+        <div class="row">
+                <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3 logo"><a [routerLink] = "['']"><h1>Music Store</h1></a></div>
+
+                <div class="col-xs-4 col-sm-9 col-md-9 col-lg-9 menu">
+                        <a [routerLink] = "['']">Home</a> | 
+                        <a [routerLink] = "['/store']">Store</a> | 
+                        <a [routerLink] = "['/cart']">Cart</a> | 
+                        <a [routerLink] = "['/admin']">Admin</a> | 
+                        <a [routerLink] = "['/login']">Login</a>
+                        </div>
+
+        </div>
+</div>
+</div>
+</div>
+
+
+    <router-outlet></router-outlet>
+
+
+    <div class="push"><h1>&nbsp;</h1></div>
+</div>
+
+
+    <div class="footer">
+        ©2019 Music Store All Rights Reserved.
+    </div>

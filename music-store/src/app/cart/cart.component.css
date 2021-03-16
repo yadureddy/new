@@ -1,0 +1,73 @@
+.hdngTxt{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    color: #059fe6;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+.hdngTxt span{
+    border-bottom: solid 2px #059fe6;
+    padding-bottom: 5px;
+}
+table{
+    border-top: solid 1px #e4e4e4;
+    border-right: solid 1px #e4e4e4;
+    font: normal 14px Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+table td, table th {
+    text-align: center;
+    border-bottom: solid 1px #e4e4e4;
+    border-left: solid 1px #e4e4e4;
+    padding: 8px 15px;
+}
+table tr td, table tr th{
+    padding: 20px;
+}
+.bg1{
+    background: #f2f2f2;
+  }
+  .bg2{
+    background: #fff;
+  }
+  .thclr{
+    background: #059fe6;
+    color: #fff;
+  }
+  table img{
+      width: 20px;
+  }
+  .cartTable p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #626363;
+  }
+  .gTotal{
+      background: #464646;
+      font-size: 18px;
+      color: #fff;
+      text-align: right !important;
+      padding: 10px 25px 10px 10px !important;
+  }
+  input[type="button"]{
+    border: none;
+    background: #059fe6;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 0px 0px 0;
+    float: right;
+}
+.aBtn{
+    border: none;
+    background: #059fe6;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 20px 0px 0;
+    float: right;
+}
+.aBtn:hover{
+    text-decoration: none;
+}

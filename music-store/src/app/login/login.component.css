@@ -1,0 +1,36 @@
+.loginMain{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 85px);
+    background-image: url('/assets/images/login-bg.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.login{
+    box-sizing: border-box;
+    padding: 30px 50px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 15%;
+
+
+}
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+input[type="button"] {
+    border: none;
+    background: hsl(199, 97%, 46%);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0px 0px 0;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+.err{
+    float: right;
+    color: red;
+    margin-top: 21px;
+}

@@ -1,0 +1,70 @@
+
+<div class="container">
+            <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-md-offset-4">
+		<h3 class="hdngTxt">We<span>lcome to Adm</span>in</h3>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <input type="button" value="Logout" (click)="logout()" class="pull-right lgt">
+                        </div>
+
+            </div>
+
+            <div class="row">
+                  
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<input type="text" [(ngModel)]="t1" placeholder="ID"/>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<input type="text" [(ngModel)]="t2" placeholder="Album Title"/>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<input type="text" [(ngModel)]="t3" placeholder="Category Name"/>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<input type="text" [(ngModel)]="t4" placeholder="Artist Name"/>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<input type="text" [(ngModel)]="t5" placeholder="Unit Price"/>
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<input type="button" value="Get Albums" (click)="getData()">
+<input type="button" value="Add Albums" (click)="addData()">
+<input type="button" value="Update" (click)="updateData()">
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr class="thclr">
+    <th>Album Id</th>
+    <th>Title</th>
+    <th>Category</th>
+    <th>Artist</th>
+    <th>Price</th>
+    <th>Select / Delete</th>
+</tr>
+
+<tr  *ngFor="let item of albums; even as x;  odd as y;" [ngClass]="{bg1:x,  bg2:y }">
+    <td>{{item.id}}</td>
+    <td>{{item.title | titlecase}}</td>
+    <td>{{item.category | uppercase}}</td>
+    <td>{{item.artist | titlecase}}</td>
+    <td>{{item.price | currency : "&#8377; "}}</td>
+    <td><a href="javascript:void(0)" (click)="selectData(item.id)"><img src="assets/images/edit.png"/></a>
+        <a href="javascript:void(0)" (click)="deleteData(item.id)"><img src="assets/images/delete.png"/></a></td>
+  </tr>
+
+</table>
+
+</div>
+</div>
+</div>

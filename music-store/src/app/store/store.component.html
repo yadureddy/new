@@ -1,0 +1,26 @@
+
+<div class="container">
+		<h3 class="hdngTxt">Al<span>l Albu</span>ms</h3>
+	<div class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sort">
+     <span>Sort By :</span> 
+     <input type="button" value="Popularity" (click)="popular()" />
+     <input type="button" value="Price Low to High" (click)="lowtoHigh()" />
+     <input type="button" value="Price High to Low" (click)="hightoLow()" />
+    </div>
+
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 topAlb"  *ngFor="let item of  albums">
+          <div class="">
+              <a [routerLink] = "['/details',item.id]"> 
+                  <img src="assets/images/music.png"  />  
+                  <br/>
+                  <span>{{item.title | titlecase}}</span>
+                  <br/>
+                  <p>{{item.price | currency : "&#8377; "}}</p>
+              </a>
+            </div>
+          </div>
+
+</div>
+</div>

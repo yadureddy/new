@@ -1,0 +1,45 @@
+<div class="container">
+  <h3 class="hdngTxt">Ch<span>eck O</span>ut</h3>
+<div class="row">
+
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-md-offset-1 bdr">
+        <div class="row">
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 col-md-offset-1">
+        <input type="text"  [(ngModel)]="customerName" placeholder="Customer Name" />
+        <input type="text" [(ngModel)]="email" placeholder="E-mail" />
+        <input type="text" [(ngModel)]="address2" placeholder="Address2" />
+        <input type="text" [(ngModel)]="district" placeholder="District" />
+        <input type="text" [(ngModel)]="pin" placeholder="Pincode" />
+        
+
+      </div>
+
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <input type="text" [(ngModel)]="contactNumber" placeholder="Contact Number" />
+          <input type="text" [(ngModel)]="address1" placeholder="Address1" />
+          <input type="text" [(ngModel)]="city" placeholder="City Name" />
+          <input type="text" [(ngModel)]="state" placeholder="State / Union Territory" />
+          
+        </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 col-md-offset-1">
+                <h3>Total Amount  :   <span>{{grandTotal | currency: "&#8377; "}}</span></h3>
+                </div>
+        
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <input type="button"  (click)="confirmOrder()" value="Confirm Order" class="pull-right"/>
+              </div>
+        </div>
+
+
+      </div>
+</div>
+
+
+
+  </div>
+
+

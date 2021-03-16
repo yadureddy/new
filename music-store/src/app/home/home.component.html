@@ -1,0 +1,40 @@
+
+	<div class="container">
+					<div class="row">
+
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ctgry">
+  <h4>Select by Category</h4>
+  <ul>
+	<li  *ngFor="let item of cats">
+    
+    <a [routerLink] = "['/browse',item]">{{item | uppercase}}</a>
+	</li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 bnr">
+
+<img src="assets/images/bnr.jpg"/>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="container">
+		<h3 class="hdngTxt">Fa<span>vourite Albu</span>ms</h3>
+	<div class="row">
+
+			
+
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 topAlb"  *ngFor="let item of  albums">
+<div class="">
+		<a [routerLink] = "['/details',item.id]"> 
+				<img src="assets/images/music.png"  />  
+				<br/>
+				<span>{{item.title | titlecase}}</span>
+		</a>
+	</div>
+</div>
+</div>
+</div>

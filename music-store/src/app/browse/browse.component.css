@@ -1,0 +1,32 @@
+.topAlb{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-sizing: border-box;
+    border: solid 6px #fff;
+    background: #ececec;
+    text-align: center;
+    padding: 20px 0;
+}
+.topAlb a{
+    color: #626363;
+    font-size: 22px;
+}
+.topAlb a:hover{
+    text-decoration: none;
+}
+.topAlb img{
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.albCtgry{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 40px;
+    margin-bottom:30px; 
+    background: #059fe6;
+    padding: 5px 20px;
+    border-radius:50px; 
+}
+.albCtgry h5{
+    color: #fff;
+    font-size: 25px;
+}

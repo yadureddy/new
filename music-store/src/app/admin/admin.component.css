@@ -1,0 +1,54 @@
+input[type="button"]{
+    border: none;
+    background: #059fe6;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 20px 50px 0;
+}
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.lgt{
+  margin-top: 42px !important;
+}
+
+table{
+    border-top: solid 1px #e4e4e4;
+    border-right: solid 1px #e4e4e4;
+    font: normal 14px Arial, Helvetica, sans-serif;
+}
+
+table td, table th {
+    text-align: center;
+    border-bottom: solid 1px #e4e4e4;
+    border-left: solid 1px #e4e4e4;
+    padding: 20px;
+}
+.bg1{
+    background: #f2f2f2;
+  }
+  .bg2{
+    background: #fff;
+  }
+  .thclr{
+    background: #059fe6;
+    color: #fff;
+  }
+  table img{
+      width: 20px;
+      margin: 0px 20px;
+  }
+  .hdngTxt{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    color: #059fe6;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+.hdngTxt span{
+    border-bottom: solid 2px #059fe6;
+    padding-bottom: 5px;
+}
+
